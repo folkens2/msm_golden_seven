@@ -4,6 +4,9 @@
 
 <dl class="dl-horizontal">
 
+  <dt>Image</dt>
+  <dd><img src="<%= @director.image_url %>"</dd>
+
   <dt>Name</dt>
   <dd><%= @director.name %></dd>
 
@@ -12,9 +15,6 @@
 
   <dt>Date of Birth</dt>
   <dd><%= @director.dob %></dd>
-
-  <dt>Image URL</dt>
-  <dd><img src="<%= @director.image_url %>"</dd>
 
   <p>
     <a href="/directors" class="btn btn-primary">Back to all Directors</a>

@@ -32,10 +32,9 @@ class DirectorsController < ApplicationController
 
   def update_row
     @director = Director.find(params[:id])
-    @director.title = params[:title]
-    @director.year = params[:year]
-    @director.duration = params[:duration]
-    @director.description = params[:description]
+    @director.name = params[:name]
+    @director.bio = params[:bio]
+    @director.dob = params[:dob]
     @director.image_url = params[:image_url]
 
     @director.save

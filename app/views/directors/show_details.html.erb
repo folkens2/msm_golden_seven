@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h1>Director # <%= @director.id %></h1>
+</div>
+
+<dl class="dl-horizontal">
+
+  <dt>Name</dt>
+  <dd><%= @director.name %></dd>
+
+  <dt>Bio</dt>
+  <dd><%= @director.bio %></dd>
+
+  <dt>Date of Birth</dt>
+  <dd><%= @director.dob %></dd>
+
+  <dt>Image URL</dt>
+  <dd><img src="<%= @director.image_url %>"</dd>
+
+  <p>
+    <a href="/directors" class="btn btn-primary">Back to all Directors</a>
+  </p>
+
+</dl>

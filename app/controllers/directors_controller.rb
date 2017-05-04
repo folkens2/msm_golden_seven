@@ -11,10 +11,9 @@ class DirectorsController < ApplicationController
 
   def create_row
     @director = Director.new
-    @director.title = params[:title]
-    @director.year = params[:year]
-    @director.duration = params[:duration]
-    @director.description = params[:description]
+    @director.name = params[:name]
+    @director.bio = params[:bio]
+    @director.dob = params[:dob]
     @director.image_url = params[:image_url]
 
     @director.save

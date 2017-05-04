@@ -1,10 +1,10 @@
 <div class="page-header">
   <h1>
-    Update Movie
+    Update Movie #<%= @movie.id %>
   </h1>
 </div>
 
-<form class="form-horizontal" action="/update_movie/:id">
+<form class="form-horizontal" action="/update_movie/<%= @movie.id %>">
 
   <!-- label and input for title -->
   <div class="form-group">

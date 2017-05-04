@@ -23,11 +23,13 @@ class MoviesController < ApplicationController
   end
 
   def show
-    #code
+    @movie = Movie.find(params[:id])
+    render("movies/show_details.html.erb")
   end
 
   def edit_form
-    #code
+    @movie = Movie.find(params[:id])
+    render("movies/edit_form.html.erb")
   end
 
   def update_row

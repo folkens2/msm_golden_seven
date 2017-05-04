@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h1>Actor # <%= @actor.id %></h1>
+</div>
+
+<dl class="dl-horizontal">
+
+  <dt>Image</dt>
+  <dd><img src="<%= @actor.image_url %>"</dd>
+
+  <dt>Name</dt>
+  <dd><%= @actor.name %></dd>
+
+  <dt>Bio</dt>
+  <dd><%= @actor.bio %></dd>
+
+  <dt>Date of Birth</dt>
+  <dd><%= @actor.dob %></dd>
+
+  <p>
+    <a href="/actors" class="btn btn-primary">Back to All Actors</a>
+  </p>
+
+</dl>

@@ -1,6 +1,5 @@
 class MoviesController < ApplicationController
 
-
   def index
     @movies = Movie.all
     render("movies/index.html.erb")
@@ -47,7 +46,9 @@ class MoviesController < ApplicationController
   end
 
   def destroy
-    #code
+    @movie = Movie.find(params[:id])
+    @movie.destroy
+    redirect_to("/")
   end
 
 end

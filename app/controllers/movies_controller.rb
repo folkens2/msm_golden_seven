@@ -8,7 +8,7 @@ class MoviesController < ApplicationController
 
 
   def new_form
-    #code
+    render("movies/new_form.html.erb")
   end
 
 
